@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Third Rock Radio Player</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#f0f0f0">
+  <link rel="apple-touch-icon" href="image/192x192.png">
+	<link rel="icon" type="image/png" href="image/192x192.png" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Third Rock Radio Player</h1>
+    <iframe id="thirdRockRadioPlayer" src="https://player.streamguys.com/thirdrock/sgplayer-3-3-0/player.php"></iframe>
+    <p>This is a fan site. Visit the <a href="https://thirdrockradio.net/" target="_blank" rel="noopener noreferrer">official website</a>.</p>
+  </div>
+</body>
+	
+	<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('sw.js');
+    });
+  }
+</script>
+
+</html>
